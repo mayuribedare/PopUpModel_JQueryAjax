@@ -1,0 +1,10 @@
+﻿
+@model IEnumerable<PopUpModel_JQueryAjax.Models.UserModel>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div id="view-all">
+    @await Html.PartialAsync("_ViewAll", Model)
+</div>
