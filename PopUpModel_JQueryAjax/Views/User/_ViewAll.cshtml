@@ -15,7 +15,7 @@
                 @Html.DisplayNameFor(model => model.Department)
             </th>
             <th>
-                <a onclick="showInPopup('@Url.Action("AddOrEdit","User",null,Context.Request.Scheme)','New User')" class="btn btn-success text-white"><i class="fa fa-user"></i> New User</a>
+                <a onclick="showInPopup('@Url.Action("AddOrEdit","User",new{Id = 0},Context.Request.Scheme)','New User')" class="btn btn-success text-white"><i class="fa fa-user"></i> New User</a>
             </th>
         </tr>
     </thead>
